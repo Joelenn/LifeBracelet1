@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/png" href="img/logo1.png">
-    <title>Life Bracelet - Trayectoria del Proyecto</title>
+    <title>Life Bracelet - Novedades</title>
     <link rel="stylesheet" href="css/style.css" />
     <style>
         /* ===== ESTILOS PARA LA BARRA DE NAVEGACIÓN CORREGIDA ===== */
@@ -226,8 +225,8 @@
             <nav class="navbar">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="novedades.html">Novedades</a></li>
-                    <li><a href="semestres.html" class="active">Semestres</a></li>
+                    <li><a href="novedades.html" class="active">Novedades</a></li>
+                    <li><a href="semestres.html">Semestres</a></li>
                     <li><a href="nosotros.html">Nosotros</a></li>
                 </ul>
             </nav>
@@ -236,103 +235,104 @@
     </div>
 
     <header class="header">
-        <!-- SOLO DEGRADADO animado, quitando fondo azul/rosado debajo del banner -->
+        <!-- Banner para Novedades -->
         <div class="header-banner-container fade-in">
             <div class="banner-overlay">
-                <h1 class="banner-title">Trayectoria del Proyecto</h1>
-                <p class="banner-subtitle">Aquí encontrarás el proceso del proyecto Life Bracelet dividido por etapas de desarrollo y validación.</p>
-    
+                <h1 class="banner-title">Novedades</h1>
+                <p class="banner-subtitle">Mantente actualizado con los últimos avances del proyecto Life Bracelet</p>
+                <a href="#novedades-content" class="btn banner-btn">Explorar Novedades</a>
             </div>
         </div>
     </header>
 
-    <main class="section-padding features">
+    <!-- Contenido Principal de Novedades -->
+    <main id="novedades-content" class="section-padding">
         <div class="container">
-            <h2 class="section-title slide-up">🚀 Fases de Desarrollo</h2>
+            <h2 class="section-title slide-up">Últimas Actualizaciones</h2>
             
-            <div class="semestres-options card-group" id="semestres-options">
-                <article 
-                    class="semestre-card slide-left" 
-                    role="button" tabindex="0" 
-                    aria-expanded="false" 
-                    data-target="s1"
-                >
-                    <div class="card-head">
-                        <span class="card-icon">1</span>
-                        <div class="card-title">
-                            <h3>Semestre 1</h3>
-                            <p class="card-sub">Conceptualización y Detección del Problema.</p>
-                        </div>
-                        <span class="toggle-icon" aria-hidden="true">▾</span>
+            <!-- Lista de Novedades -->
+            <div class="novedades-grid">
+                <!-- Novedad 1 -->
+                <article class="novedad-card slide-left">
+                    <div class="novedad-image">
+                        <img src="img/nuevainter.png" alt="Nueva Interfaz de Usuario" />
                     </div>
-                    <div class="card-details" id="s1" aria-hidden="true">
-                        <p>En el primer semestre se definieron la misión, la necesidad y el alcance del proyecto. Se validaron las hipótesis iniciales y se documentaron los principales casos de uso y requerimientos.</p>
-                        <div class="card-actions">
-                            <a href="semestre1.html" class="btn btn-small">Ver Semestre 1</a>
-                        
+                    <div class="novedad-content">
+                        <span class="novedad-fecha">10/11/2025</span>
+                        <h3>Lanzamiento de Nueva Interfaz de Usuario</h3>
+                        <p><strong>Hemos rediseñado completamente la interfaz de nuestra aplicación móvil</strong> para mejorar la experiencia de usuario y facilitar el acceso a las funciones principales para adultos mayores.</p>
+
+                        <div class="novedad-tags">
+                            <span class="tag">Diseño</span>
+                            <span class="tag">UX/UI</span>
+                            <span class="tag">App Móvil</span>
                         </div>
+                        <a href="#" class="btn btn-small">Leer Más</a>
                     </div>
                 </article>
-                
-                <article 
-                    class="semestre-card slide-up delay-200" 
-                    role="button" tabindex="0" 
-                    aria-expanded="false" 
-                    data-target="s2"
-                >
-                    <div class="card-head">
-                        <span class="card-icon">2</span>
-                        <div class="card-title">
-                            <h3>Semestre 2</h3>
-                            <p class="card-sub">Selección de Componentes y Diseño de Prototipo Básico.</p>
-                        </div>
-                        <span class="toggle-icon" aria-hidden="true">▾</span>
+
+                <!-- Novedad 2 -->
+                <article class="novedad-card slide-up delay-200">
+                    <div class="novedad-image">
+                        <img src="img/iron.png" alt="Prototipo Hardware" />
                     </div>
-                    <div class="card-details" id="s2" aria-hidden="true">
-                        <p>El segundo semestre se enfocó en la selección de sensores, microcontroladores y en la creación de los primeros prototipos funcionales. Se realizaron pruebas de integración y mediciones preliminares.</p>
-                        <div class="card-actions">
-                            <a href="semestre2.html" class="btn btn-small">Ver Semestre 2</a>
-                            <a href="img/EstadodelArte.pdf" class="btn btn-ghost" target="_blank">Descargar Estado del Arte</a>
+                    <div class="novedad-content">
+                        <span class="novedad-fecha">10/11/2025</span>
+                        <h3>Detector de Caídas</h3>
+                        <p><p><strong>¡Presentamos nuestro nuevo avance en seguridad!</strong><br>
+En <strong>Life Bracelet</strong> estamos comprometidos con la <strong>protección inteligente</strong> de nuestros usuarios. Como parte de este esfuerzo, hemos desarrollado un <strong>huante detector de caídas</strong>, un sistema capaz de <strong>identificar movimientos bruscos o caídas</strong> y <strong>enviar alertas inmediatas a contactos de emergencia</strong>. Este avance busca ofrecer <strong>tranquilidad</strong> a quienes más se preocupan por su <strong>seguridad y bienestar</strong>.</p>
+</p>
+                        <div class="novedad-tags">
+                            <span class="tag">Hardware</span>
+                            <span class="tag">Prototipo</span>
+                            <span class="tag">Sensores</span>
                         </div>
+                        <a href="#" class="btn btn-small">Ver Detalles</a>
                     </div>
                 </article>
-                
-                <article 
-                    class="semestre-card slide-right delay-400" 
-                    role="button" tabindex="0" 
-                    aria-expanded="false" 
-                    data-target="s3"
-                >
-                    <div class="card-head">
-                        <span class="card-icon">3</span>
-                        <div class="card-title">
-                            <h3>Semestre 3</h3>
-                            <p class="card-sub">Validación Funcional, Algoritmos y Optimización.</p>
-                        </div>
-                        <span class="toggle-icon" aria-hidden="true">▾</span>
+
+                <!-- Novedad 3 -->
+                <article class="novedad-card slide-right delay-400">
+                    <div class="novedad-image">
+                        <img src="img/pagsp.png" alt="Migración Tecnológica" />
                     </div>
-                    <div class="card-details" id="s3" aria-hidden="true">
-                        <p>En este semestre se implementaron los algoritmos de detección, se validó el rendimiento del prototipo y se optimizó consumo y fiabilidad. Se recorrieron ciclos de prueba-errores y ajuste de parámetros.</p>
-                        <div class="card-actions">
-                            <a href="semestre3.html" class="btn btn-small">Ver Semestre 3</a>
-                            <a href="img/LifeBracelet3erSem.pdf" class="btn btn-ghost" target="_blank">Descargar Avance del Proyecto</a>
+                    <div class="novedad-content">
+                        <span class="novedad-fecha">05/11/2025</span>
+                        <h3>Migración a ESP32</h3>
+                        <p>Hemos completado con éxito la migración de Arduino a ESP32, lo que nos permite mayor capacidad de procesamiento y conectividad WiFi integrada para transmisión de datos en tiempo real.</p>
+                        <div class="novedad-tags">
+                            <span class="tag">Tecnología</span>
+                            <span class="tag">ESP32</span>
+                            <span class="tag">Conectividad</span>
                         </div>
+                        <a href="#" class="btn btn-small">Conocer Más</a>
                     </div>
                 </article>
-            </div>
-            
-            <section class="cta cta-semestres fade-in delay-600">
-                <p>¿Te interesa saber quienes estan detras de este proyecto?</p>
-                <a href="nosotros.html" class="btn">Nosotros</a>
+
+
+            <!-- Suscripción a Novedades -->
+            <section class="cta bg-rosa fade-in delay-600">
+                <div class="container text-center">
+                    <h2>¿Quieres recibir nuestras novedades?</h2>
+                    <p>Suscríbete a nuestro boletín para mantenerte informado sobre los últimos avances del proyecto.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu correo electrónico" required>
+                        <button type="submit" class="btn">Suscribirse</button>
+                    </form>
+                </div>
             </section>
         </div>
     </main>
-    
+
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // IntersectionObserver (mantener igual)
-            const observerOptions = { root: null, rootMargin: '0px', threshold: 0.08 };
-            const observer = new IntersectionObserver((entries) => {
+        document.addEventListener('DOMContentLoaded', () => {
+            // Animaciones scroll
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1 
+            };
+            const observer = new IntersectionObserver((entries, observer) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('visible');
@@ -340,63 +340,20 @@
                     }
                 });
             }, observerOptions);
-            document.querySelectorAll('.slide-up, .slide-left, .slide-right, .fade-in').forEach(el => observer.observe(el));
-
-            // ACORDEÓN CORREGIDO - FUNCIONA PERFECTAMENTE
-            const cards = document.querySelectorAll('.semestre-card');
-            let activeCard = null;
-
-            function closeAllCards() {
-                cards.forEach(card => {
-                    card.classList.remove('active');
-                    card.setAttribute('aria-expanded', 'false');
-                    const details = document.getElementById(card.getAttribute('data-target'));
-                    if (details) {
-                        details.setAttribute('aria-hidden', 'true');
-                    }
-                });
-                activeCard = null;
-            }
-
-            function openCard(card) {
-                const targetId = card.getAttribute('data-target');
-                const details = document.getElementById(targetId);
-                
-                if (details) {
-                    card.classList.add('active');
-                    card.setAttribute('aria-expanded', 'true');
-                    details.setAttribute('aria-hidden', 'false');
-                    activeCard = card;
-                }
-            }
-
-            cards.forEach(card => {
-                card.addEventListener('click', function(e) {
-                    // Ignorar clicks en enlaces
-                    if (e.target.closest('a')) return;
-
-                    const isSameCard = activeCard === card;
-                    
-                    // Cerrar todas las cartas primero
-                    closeAllCards();
-                    
-                    // Si no es la misma carta que estaba activa, abrir esta
-                    if (!isSameCard) {
-                        openCard(card);
-                    }
-                });
-
-                // Soporte para teclado
-                card.addEventListener('keydown', function(e) {
-                    if (e.key === 'Enter' || e.key === ' ') {
-                        e.preventDefault();
-                        this.click();
-                    }
-                });
+            document.querySelectorAll('.slide-up, .slide-left, .slide-right, .fade-in, .delay-200, .delay-400, .delay-600').forEach(el => {
+                observer.observe(el);
             });
 
-            // Inicializar todas cerradas
-            closeAllCards();
+            // Formulario de suscripción
+            const newsletterForm = document.querySelector('.newsletter-form');
+            if (newsletterForm) {
+                newsletterForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    const email = newsletterForm.querySelector('input[type="email"]').value;
+                    alert(`¡Gracias por suscribirte con el correo: ${email}! Te mantendremos informado sobre nuestras novedades.`);
+                    newsletterForm.reset();
+                });
+            }
             
             // Cerrar menú móvil al hacer clic en el overlay
             const menuToggle = document.getElementById('menu-toggle');
